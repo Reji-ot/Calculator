@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="calculator">
+        <div class="calculator-header">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                   <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+               </label>
+             </div>             
+        </div>
+        <div class="calculator-body">
+            <div>
+                <h1 id="output">0</h1>
+                <p id="input"></p>
+            </div>
+        </div>
+        <div class="calculator-footer">
+            <div onclick="calculate('C')" class="button symbol">C</div>
+            <div onclick="calculate('AC')" class="button symbol">AC</div>
+            <div onclick="calculate('%')" class="button symbol">%</div>
+            <div onclick="calculate('/')" class="button symbol">/</div>
+            <div onclick="calculate('7')" class="button">7</div>
+            <div onclick="calculate('8')" class="button">8</div>
+            <div onclick="calculate('9')" class="button">9</div>
+            <div onclick="calculate('x')" class="button symbol">x</div>
+            <div onclick="calculate('4')" class="button">4</div>
+            <div onclick="calculate('5')" class="button">5</div>
+            <div onclick="calculate('6')" class="button">6</div>
+            <div onclick="calculate('-')" class="button symbol">-</div>
+            <div onclick="calculate('1')" class="button">1</div>
+            <div onclick="calculate('2')" class="button">2</div>
+            <div onclick="calculate('3')" class="button">3</div>
+            <div onclick="calculate('+')" class="button symbol">+</div>
+            <div onclick="calculate('0')" class="button">0</div>
+            <div onclick="calculate('00')" class="button">00</div>
+            <div onclick="calculate('.')" class="button">.</div>
+            <div onclick="calculate('=')" class="button symbol-dark">=</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.1.0/math.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
